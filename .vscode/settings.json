@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"C:/Users/srizv/OneDrive/Documents/Udemy Classes/C++/Unreal Engine C++/BullCowGameUnreal/.git": true,
+		"C:/Users/srizv/OneDrive/Documents/Udemy Classes/C++/Unreal Engine C++/BullCowGameUnreal/.vs": true,
+		"C:/Users/srizv/OneDrive/Documents/Udemy Classes/C++/Unreal Engine C++/BullCowGameUnreal/.vscode": true,
+		"C:/Users/srizv/OneDrive/Documents/Udemy Classes/C++/Unreal Engine C++/BullCowGameUnreal/Content": true,
+		"C:/Users/srizv/OneDrive/Documents/Udemy Classes/C++/Unreal Engine C++/BullCowGameUnreal/Intermediate": true,
+		"C:/Users/srizv/OneDrive/Documents/Udemy Classes/C++/Unreal Engine C++/BullCowGameUnreal/Saved": true
+	}
+}
