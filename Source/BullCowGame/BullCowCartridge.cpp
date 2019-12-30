@@ -11,4 +11,5 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
 {
     FString HiddenWord = TEXT("isogram");
     ClearScreen();
+    PrintLine(Input);
 }
