@@ -6,13 +6,16 @@ void UBullCowCartridge::BeginPlay() // When the game starts
     Super::BeginPlay();
     PrintLine(TEXT("This is Bulls and Cows."));
     PrintLine(TEXT("Enter a 4-letter word and press enter to continue..."));
-    InitGame(); // setup game
+    SetupGame(); // setup game
 }
 
 void UBullCowCartridge::OnInput(const FString& Input) // When the player hits enter
 {
     
     ClearScreen();
+
+    HiddenWord.Len();
+    
     PrintLine("Your guess: ");
     PrintLine(Input);
     if(Input == HiddenWord) PrintLine("Congrats. You won the game.");
@@ -27,7 +30,7 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     }
 }
 
-void UBullCowCartridge::InitGame() //initialize member variables
+void UBullCowCartridge::SetupGame() //initialize member variables
 {
     HiddenWord = TEXT("date");
     Tries = 4;
