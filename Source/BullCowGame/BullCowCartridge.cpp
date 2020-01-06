@@ -21,12 +21,11 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     if(Input == HiddenWord) PrintLine("Congrats. You won the game.");
     else 
     {
-        --Tries;
-        if(Tries == 0)
+        if(Input.Len() != HiddenWord.Len())
         {
-            PrintLine(TEXT("You have used up all of your tries."));
+            PrintLine(TEXT("The hidden word is 4 letters. Please try again."));
         }
-        PrintLine("That's wrong but keep trying.");
+        PrintLine("You lose.");
     }
 }
 
